@@ -1,0 +1,159 @@
+
+body {
+	font-family: ubuntu;
+	width: 1270px;
+	font-size: 40px;
+	margin: 0;
+}
+header {
+	width: 1270px;
+/*	background-color: white;
+*/	position: fixed;
+	margin-top: 50px;
+}
+.container {
+	width: 1270px;
+	height: 500px;
+}
+
+a {
+	color: #E54918;
+	text-decoration: none;
+	font-family: ubuntu;
+}
+
+
+#logo {
+	font-family: philosopher;
+	font-weight: normal;
+	text-transform: uppercase;
+	height: 70px;
+	width: 420px;
+	background-color: #E54918;
+	border-radius: 0px 0px 5px 0px;
+	font-size: 100%;
+	float: left;
+}
+
+#logo a{
+	font-family: philosopher;
+	color: white;
+	font-size: 100%;
+
+}
+
+#logo .sudarshan {
+	font-size: 100%;
+	margin-left: 40px;
+}
+
+#logo .isa {
+	font-size: 40%;
+	margin-left: 160px;
+	color: white;
+	margin-top: -5px;
+}
+
+.header-links {
+	padding: 20px 20px 0 330px;
+	color: #4D4D4D;
+	float: left;
+	font-size: 75%;
+	text-transform: uppercase;
+}
+
+#work-link{
+	padding: 0 25px;
+	color: #E54918;
+}
+
+#methods-link{
+	padding: 0 25px;
+}
+
+#about-link{
+	padding: 0 25px;
+}
+
+.header-links a {
+	color: #4D4D4D;
+	font-size: 100%;
+}
+
+.project-title{
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 70%;
+	margin-left: 40px;
+	margin-top: 130px;
+	color: #E54918;
+	margin-bottom: 20px;
+	width: 340px;
+	position: fixed;
+	background-color: #333333
+}
+
+a.tags {	
+	color: #4D4D4D;
+	font-size: 30%;
+	font-weight: normal;
+	text-decoration: underline;
+}
+
+.sidenav {
+	width: 340px;
+	height: auto;
+	float: left;
+	background-color: #F2F2F2;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	position: fixed;
+	margin-top: 220px;
+
+}
+
+.sidenav p {
+	margin-left: 40px;
+	font-size: 55%;
+	padding-top: 5px;
+	color: #E54918;
+	margin-top: 10;
+	margin-bottom: 0;
+}
+
+.sidenav ul {
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: 50%;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+
+}
+
+.sidenav li {
+	padding: 7px 0;
+	text-transform: none;
+	font-variant: small-caps;
+
+}
+
+.projectcontent {
+	position: relative;
+	width: 1270px;
+	background-color: blue;
+}
+
+.opening-image {
+	width: 1270px;
+	height: 700px;
+	overflow: hidden;
+	background-image: url(../Content/Patelco/Opening.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	z-index: -1;
+	position: absolute;
+	float: left;
+}
+

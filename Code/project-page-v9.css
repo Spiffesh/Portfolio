@@ -1,0 +1,242 @@
+
+body {
+	/* Whole body given font of Ubuntu. Width of the overall body is definied. 
+	Global font-size is defined on the basis of which all font sizes on the page are expressed as a %age
+	Margin 0 makes the body stick to the browser*/
+	font-family: ubuntu;
+	width: 1270px;
+	font-size: 40px;
+	margin: 0;
+}
+header {
+	/*header contains the logo and the header-links (if active). Width is fixed at the value entered for body. Position is fixed
+	and a margin given at top. If header-links is not active, the white background should be commented out*/
+	width: 1270px;
+/*	background-color: white;
+*/	position: fixed;
+	margin-top: 50px;
+}
+.container {
+	/* container for all the items outside of the header and side-nav */
+	width: 1270px;
+	height: auto;
+}
+
+a {
+	/* Global link definition is orange color and without underline */
+	color: #E54918;
+	text-decoration: none;
+}
+
+
+#logo {
+	/*This is the logo area which contains 'Sudarshan' and the 'is a ______' part. 
+	Separate font family, fixed box and floats inside the header*/
+	font-family: philosopher;
+	font-weight: normal;
+	text-transform: uppercase;
+	height: 70px;
+	width: 420px;
+	background-color: #E54918;
+	border-radius: 0px 0px 5px 0px;
+	font-size: 100%;
+	float: left;
+}
+
+/* The 'sudarshan' in the logo is a link to the home page. Link properties are specified here just for links inside the logo box*/
+#logo a{
+	color: white;
+}
+
+/* Fontsize and positioning for 'sudarshan' under logo*/
+#logo .sudarshan {
+	font-size: 100%;
+	margin-left: 40px;
+}
+
+/* Fontsize and positioning for 'is a _______' under logo*/
+
+#logo .isa {
+	font-size: 33%;
+	margin-left: 160px;
+	color: white;
+	margin-top: -5px;
+}
+
+/* All the links which were in header (Work, Methods, About) are commented out*/
+
+/*.header-links {
+	padding: 20px 20px 0 330px;
+	color: #4D4D4D;
+	float: left;
+	font-size: 75%;
+	text-transform: uppercase;
+}
+
+#work-link{
+	padding: 0 25px;
+	color: #E54918;
+}
+
+#methods-link{
+	padding: 0 25px;
+}
+
+#about-link{
+	padding: 0 25px;
+}
+
+.header-links a {
+	color: #4D4D4D;
+	font-size: 100%;
+} */
+
+/*This class defines the properties of the title of the project
+The margins are hard-coded and a padding is given to the text to make sure that the background colour fills the space between logo and sidenav.*/
+.project-title{
+	width: 380px;
+	text-transform: uppercase;
+	font-weight: 700;
+	font-size: 80%;
+	margin-top: 150px;
+	color: rgba(243,80,29,0.5);
+	margin-bottom: 20px;
+	height: 60px;
+	position: fixed;
+	vertical-align: middle;
+/*	background-color: #4D4D4D;*/
+	padding-left: 40px;
+/*	padding-top: 10px;
+	padding-bottom: 10px;*/
+}
+
+/*This class defines the properties of the tags for the project which happen to be anchor links*/
+a.tags {	
+	color: #4D4D4D;
+	font-size: 30%;
+	font-weight: 200;
+	text-decoration: underline;
+	vertical-align: super;
+}
+
+/*This defines the properties for the sidenav box. The top margin is hard-coded and position is fixed to make it sticky on the page.*/
+
+.sidenav {
+	width: 340px;
+	height: auto;
+	float: left;
+	background-color: #F2F2F2;
+	font-weight: 500;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	position: fixed;
+	margin-top: 220px;
+
+}
+
+/*Next set of classes define the properties for the content inside the sidenav */
+.sidenav p {
+	margin-left: 40px;
+	font-size: 55%;
+	padding-top: 5px;
+	color: #E54918;
+	margin-top: 10;
+	margin-bottom: 0;
+}
+
+.sidenav ul {
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: 50%;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+
+}
+
+.sidenav li {
+	padding: 7px 0;
+	text-transform: none;
+	font-variant: small-caps;
+
+}
+
+/*This defines the box of content that will give the container for all the project content*/
+.projectcontent {
+	position: relative;
+	width: 1270px;
+}
+
+/*This is just for the large opening image that will roll under the fixed nav. */
+.opening-image {
+	width: 1270px;
+	height: 770px;
+	overflow: hidden;
+	background-image: url(../Content/Patelco/Opening.png);
+	background-position: top;
+	background-repeat: no-repeat;
+	z-index: -1;
+	position: relative;
+	float: left;
+}
+
+.project-text {
+	font-family: roboto;
+	font-weight: 300;
+	float: left;
+	font-size: 50%;
+	margin-left: 440px;
+	padding-left: 80px;
+	padding-right: 160px;
+}
+
+.project-text h1 {
+	font-family: Raleway;
+	font-weight: 200;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: -87px;
+	background-color: #FBE8E6;
+	padding: 7px;
+}
+
+.project-text h2 {
+	font-family: Raleway;
+	font-weight: 200;
+	font-size: 120%;
+	border-bottom: 2px dotted #F3501D;
+	margin-left: -80px;
+}
+
+.opening-image .project-opening {
+	font-family: Raleway;
+	font-weight: 800;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: 440px;
+	margin-top: 65px;
+	color: rgba(243,80,29,0.5); 
+	position: absolute;
+}
+
+.project-text li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #4D4D4D;
+}
+
+.img-people {
+/*	position: relative;
+*/	float: right;
+	width: 265px;
+	height: 265px;
+/*	margin-left: 60px;
+*//*	border-radius: 130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius: 140px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
+
+

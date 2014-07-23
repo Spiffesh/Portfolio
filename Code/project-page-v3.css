@@ -1,0 +1,93 @@
+
+
+header {
+	width: 1270px;
+	height: 70px;
+}
+.container {
+	width: 1000px;
+	background-color: blue;
+}
+#logo {
+	font-weight: normal;
+	height: 70px;
+	width: 420px;
+	background-color: #E54918;
+	border-radius: 0px 0px 5px 0px;
+	font-size: 40px;
+	float: left;
+}
+
+#logo a{
+	font-family: philosopher;
+	color: white;
+	font-size: 100%;
+
+}
+
+#logo .sudarshan {
+	font-size: 100%;
+	margin-left: 40px;
+}
+
+#logo .isa {
+	font-size: 50%;
+	margin-left: 160px;
+	color: white;
+	margin-top: -5px;
+}
+
+.header-links {
+	padding: 25px 25px 0 370px;
+	color: #4D4D4D;
+	float: left;
+	font-size: 30px;
+}
+
+a#work-link{
+	padding: 0 25px;
+	color: #E54918;
+}
+
+a#methods-link{
+	padding: 0 25px;
+}
+
+a#about-link{
+	padding: 0 25px;
+}
+
+.project-title{
+	font-weight: 500;
+	margin-left: 40px;
+	color: #E54918;
+}
+
+a.tags {	
+	color: #4D4D4D;
+	font-size: 10%;
+}
+
+a {
+	color: #E54918;
+	text-decoration: none;
+	font-family: ubuntu;
+}
+
+.header-links a {
+	color: #4D4D4D;
+	font-size: 100%;
+}
+
+
+.sidenav {
+	width: 340px;
+	float: left;
+	background-color: #F2F2F2;
+
+}
+
+.projectcontent {
+	float: left;
+	width: 600px;
+}

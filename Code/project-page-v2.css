@@ -1,0 +1,39 @@
+.container {
+	width: 1000px;
+}
+#logo {
+	font-family: philosopher;
+	font-weight: bold;
+	height: 70px;
+	width: 420px;
+	background-color: #E54918;
+
+}
+#logo .sudarshan {
+	height: 25px;
+	width: 240px;
+	font-size: 30px;
+	margin-left: 40px;
+}
+a {
+	color: #E54918;
+	text-decoration: none;
+}
+
+a.sudarshan{
+	color: white;
+	font-size: 100%;
+
+}
+
+.sidenav {
+	width: 340px;
+	float: left;
+	background-color: #F2F2F2;
+
+}
+
+.projectcontent {
+	float: left;
+	width: 600px;
+}
