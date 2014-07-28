@@ -21,7 +21,7 @@
 	$.DropDown.defaults = {
 		speed : 300,
 		easing : 'ease',
-		gutter : 0,
+		gutter : 5,
 		// initial stack effect
 		stack : true,
 		// delay between each option animation

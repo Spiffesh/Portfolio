@@ -14,6 +14,12 @@
 		<script src="js/modernizr.custom.js"></script>
 		<link rel="stylesheet" type="text/css" href="css/style4.css" />
 		<script src="js/modernizr.custom.63321.js"></script>
+		<script src="js/jquery.dropdown.js"></script>
+		<style>
+			.ha-header-box h1:after {
+			content: "Mobile Banking App";
+			}
+		</style>
 	</head>
 	<body>
 		<header>
@@ -26,6 +32,14 @@
 				<a id="methods-link" href="methods.html">Methods</a>
 				<a id="about-link" href="about.html">About</a>
 			</div> -->
+			<div>
+				<select id="cd-dropdown" class="cd-select">
+					<option value="-1" selected>is a</option>
+					<option value="1">User Experience designer</option>
+					<option value="2">Social Entrepreneur</option>
+					<option value="4">Human</option>
+				</select>
+			</div>
 		</header>
 		<div class="container">
 			<!-- the header that will be animated by adding the respective state class to it -->
@@ -72,6 +86,17 @@
 					}
 				}, { offset: '100%' } );
 			} );
+		</script>
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+		<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown();
+
+			});
+
 		</script>
 	</body>
 </html>

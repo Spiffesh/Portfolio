@@ -56,13 +56,14 @@ header {
 	font-weight: 700;
 	text-transform: uppercase;
 	height: 70px;
-	width: 420px;
+	width: 415px;
 	background-color: #E54918;
-	border-radius: 0px 0px 5px 0px;
-	font-size: 2em;
+	border-radius: 0px 0px 5px 5px;
+	font-size: 40px;
 	float: left;
 	z-index: 900;
 	margin-top: 50px;
+	margin-left: 5px;
 }
 
 /* The 'sudarshan' in the logo is a link to the home page. Link properties are specified here just for links inside the logo box*/
@@ -76,13 +77,97 @@ header {
 	margin-left: 40px;
 }
 
+.cd-dropdown,
+.cd-select {
+	position: relative;
+	width: 415px;
+	/*margin: 20px auto;*/
+	display: block;
+	margin-left: 5px
+}
+
+.cd-dropdown > span {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	background: #E54918;
+	display: block;
+	padding: 0 50px 0 30px;
+	position: relative;
+	cursor: pointer;
+}
+
+.cd-dropdown > span:after {
+	content: '\25BC';
+	position: absolute;
+	right: 0px;
+	top: 15%;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	height: 70%;
+	line-height: 24px;
+	border-left: 1px solid #ddd;
+}
+
+/*.cd-dropdown.cd-active > span:after {
+	content: '\25B2';
+}
+*/
+.cd-dropdown ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+}
+
+.cd-dropdown ul li {
+	display: block;
+}
+
+.cd-dropdown ul li span {
+	width: 100%;
+	background: #E54918;
+	line-height: 60px;
+	padding: 0 30px 0 75px;
+	display: block;
+	color: #fff;
+	cursor: pointer;
+	font-weight: 700;
+}
+
+.cd-dropdown > span,
+.cd-dropdown ul li span {
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+/*.cd-dropdown > span span[class^="icon-"],
+.cd-dropdown > span span[class*=" icon-"]{
+	padding: 0 30px 0 45px;
+}*/
+
+/* Select fallback styling */
+.cd-select {
+	border: 1px solid #ddd;
+}
+
 .ha-header {
 	position: fixed;
-	top: 0;
+	top: 180px;
 	left: 0;
 	width: 100%;
-	padding: 0;
-	z-index: 50;
+	padding-left: 0px;
 	font-family: 'Lato', Arial, sans-serif;
 	-webkit-transform: translateY(0%);
 	-moz-transform: translateY(0%);
@@ -98,11 +183,13 @@ header {
 .ha-header h1 {
 	display: inline-block;
 	vertical-align: middle;
+	text-align: center;
 	text-align: left;
 	font-weight: 400;
-	font-size: 2em;
-	margin: 0;
-	padding: 1em 1em 1em 1em;
+	font-size: 30px;
+	margin-left: 5px;
+	width: 100%;
+	/*padding: 20px auto 20px 400px;*/
 	color: #E54918;
 	cursor: default;
 	height: 100%;
@@ -137,7 +224,7 @@ header {
 }
 
 .ha-header-box {
-	top: 20px;
+	top: 180px;
 	left: 20px;
 	width: 500px;
 	background-color: rgba(255,255,255,0);
@@ -152,7 +239,6 @@ header {
 
 .ha-header-box h1:after {
 	opacity: 1;
-	content: "Mobile Banking App";
 	color: #E54918;
 }
 
