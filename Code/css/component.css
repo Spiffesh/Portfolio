@@ -160,6 +160,7 @@ header {
 /* Select fallback styling */
 .cd-select {
 	border: 1px solid #ddd;
+
 }
 
 .ha-header {
@@ -189,27 +190,28 @@ header {
 	font-size: 30px;
 	margin-left: 5px;
 	width: 100%;
-	/*padding: 20px auto 20px 400px;*/
 	color: #E54918;
 	cursor: default;
 	height: 100%;
-	z-index: 1;
+	/*z-index: 1;*/
 	-webkit-transition: all 0.1s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
+	text-transform: uppercase;
 }
 
 .ha-header h1::after {
 	content: '';
-	width: 500px;
-	height: 96px;
+	width: 420px;
+	height: auto;
 	background: transparent;
 	position: absolute;
-	z-index: 100;
-	top: 0;
+	/*z-index: 100;*/
+	top: 20px;
 	left: 0;
 	cursor: pointer;
 	opacity: 0;
+	text-transform: uppercase;
 /*	border: 20px solid #fff;*/	
 	-webkit-transition: opacity 0.1s;
 	-moz-transition: opacity 0.1s;
@@ -221,12 +223,15 @@ header {
 
 .ha-header-small h1{
 	background-color: rgba(255,255,255,0.5);
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 .ha-header-box {
 	top: 180px;
-	left: 20px;
-	width: 500px;
+	left: 5px;
+	width: 420px;
 	background-color: rgba(255,255,255,0);
 }
 
@@ -240,6 +245,9 @@ header {
 .ha-header-box h1:after {
 	opacity: 1;
 	color: #E54918;
+	padding-left: 50px;
+	padding-top: 10px;
+	padding-bottom: 10px;
 }
 
 
