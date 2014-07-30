@@ -1,10 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Exo:300,400,700);
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 body {
 	background: white;
 	font-weight: 400;
-	font-family: 'Lato', Arial, sans-serif;
+	font-family: 'Exo', Arial, sans-serif;
+	font-size: 40px;
 }
 
 /* Content style */
@@ -16,15 +17,12 @@ a {
 }
 
 section.project-text {
-	width: 90%;
-	max-width: 46em;
-	text-align: justify;
-	padding: 1em 2em 0 2em;
-	margin: 0;
-	margin-left: 200px;
-	color: black;
-	line-height: 1.3;
-	font-size: 1.8em;
+	font-weight: 300;
+	float: left;
+	font-size: 40%;
+	margin-left: 440px;
+	padding-left: 80px;
+	padding-right: 160px;
 }
 
 section p {
@@ -37,9 +35,9 @@ img {
 }
 .opening-image {
 	width: 100%;
-	height: 770px;
+	height: 870px;
 	overflow: hidden;
-	z-index: -1;
+	z-index: -1000;
 }
 
 
@@ -59,11 +57,12 @@ header {
 	width: 415px;
 	background-color: #E54918;
 	border-radius: 0px 0px 5px 5px;
-	font-size: 40px;
+	font-size: 90%;
 	float: left;
 	z-index: 900;
 	margin-top: 50px;
 	margin-left: 5px;
+	border-bottom: transparent solid 2px;
 }
 
 /* The 'sudarshan' in the logo is a link to the home page. Link properties are specified here just for links inside the logo box*/
@@ -73,8 +72,12 @@ header {
 
 /* Fontsize and positioning for 'sudarshan' under logo*/
 #logo .sudarshan {
-	font-size: 100%;
+	font-size: 90%;
 	margin-left: 40px;
+}
+
+.ztop {
+	z-index: 10;
 }
 
 .cd-dropdown,
@@ -83,7 +86,9 @@ header {
 	width: 415px;
 	/*margin: 20px auto;*/
 	display: block;
-	margin-left: 5px
+	margin-left: 5px;
+	border-top: transparent solid 2px;
+
 }
 
 .cd-dropdown > span {
@@ -91,11 +96,11 @@ header {
 	height: 60px;
 	line-height: 60px;
 	color: #fff;
-	font-weight: 700;
-	font-size: 16px;
+	font-weight: 400;
+	font-size: 55%;
 	background: #E54918;
 	display: block;
-	padding: 0 50px 0 30px;
+	padding: 0 50px 0 75px;
 	position: relative;
 	cursor: pointer;
 }
@@ -139,6 +144,7 @@ header {
 	color: #fff;
 	cursor: pointer;
 	font-weight: 700;
+	font-size: 55%;
 }
 
 .cd-dropdown > span,
@@ -152,6 +158,81 @@ header {
 	user-select: none;
 }
 
+.cd-dropdown {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+	top: 121px;
+}
+
+.cd-dropdown > span {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-o-transition: -o-transform .3s;
+	-ms-transition: -ms-transform .3s;
+	transition: transform .3s;
+}
+
+.cd-dropdown > span:active {
+	-webkit-transform: rotateX(60deg);
+	-moz-transform: rotateX(60deg);
+	-o-transform: rotateX(60deg);
+	-ms-transform: rotateX(60deg);
+	transform: rotateX(60deg);
+}
+
+.cd-dropdown > span,
+.cd-dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+
+.cd-dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+
+.cd-active.cd-dropdown > span {
+	color: #fff;
+}
+
+.cd-active.cd-dropdown > span,
+.cd-active.cd-dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.cd-active.cd-dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+.cd-active.cd-dropdown ul li span:hover {
+	background: #f8b161;
+	color: #fff;
+}
+
 /*.cd-dropdown > span span[class^="icon-"],
 .cd-dropdown > span span[class*=" icon-"]{
 	padding: 0 30px 0 45px;
@@ -162,6 +243,8 @@ header {
 	border: 1px solid #ddd;
 
 }
+
+/*This is the project title transitioning from long text to short text*/
 
 .ha-header {
 	position: fixed;
@@ -176,6 +259,8 @@ header {
 	-webkit-transition: all 0.1s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
+	z-index: 2;
+
 }
 
 
@@ -187,13 +272,12 @@ header {
 	text-align: center;
 	text-align: left;
 	font-weight: 400;
-	font-size: 30px;
+	font-size: 70%;
 	margin-left: 5px;
 	width: 100%;
 	color: #E54918;
 	cursor: default;
 	height: 100%;
-	/*z-index: 1;*/
 	-webkit-transition: all 0.1s;
 	-moz-transition: all 0.5s;
 	transition: all 0.5s;
@@ -206,7 +290,6 @@ header {
 	height: auto;
 	background: transparent;
 	position: absolute;
-	/*z-index: 100;*/
 	top: 20px;
 	left: 0;
 	cursor: pointer;
@@ -226,6 +309,7 @@ header {
 	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+/*	z-index: 10;*/
 }
 
 .ha-header-box {
@@ -233,6 +317,7 @@ header {
 	left: 5px;
 	width: 420px;
 	background-color: rgba(255,255,255,0);
+	/*z-index: 11;*/
 }
 
 
@@ -245,17 +330,115 @@ header {
 .ha-header-box h1:after {
 	opacity: 1;
 	color: #E54918;
-	padding-left: 50px;
+	padding-left: 30px;
 	padding-top: 10px;
 	padding-bottom: 10px;
+	padding-right: 30px;
+}
+
+.sidenav {
+	width: 340px;
+	height: auto;
+	float: left;
+	background-color: #F2F2F2;
+	font-weight: 400;
+	text-transform: uppercase;
+	padding-bottom: 20px;
+	position: fixed;
+	margin-top: 210px;
+	z-index: -100;
+
+}
+
+/*Next set of classes define the properties for the content inside the sidenav */
+.sidenav p {
+	margin-left: 40px;
+	font-size: 55%;
+	padding-top: 5px;
+	color: #E54918;
+	margin-top: 10;
+	margin-bottom: 0;
+}
+
+.sidenav ul {
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: 50%;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+
+}
+
+.sidenav li {
+	padding: 7px 0;
+	text-transform: none;
+	font-variant: small-caps;
+
 }
 
 
+/*This is for the main project text */
+
+.project-text {
+	font-weight: 300;
+	float: left;
+	font-size: 80%;
+/*	margin-left: 440px;
+*//*	padding-left: 80px;
+	padding-right: 160px;*/
+}
+
+.project-text h1 {
+	font-weight: 200;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: -87px;
+	background-color: #FBE8E6;
+	padding: 7px;
+}
+
+.project-text h2 {
+	font-weight: 200;
+	font-size: 120%;
+	border-bottom: 2px dotted #F3501D;
+	margin-left: -80px;
+}
+
+.opening-image .project-opening {
+	font-weight: 800;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: 440px;
+	margin-top: 65px;
+	color: rgba(243,80,29,0.5); 
+	position: absolute;
+}
+
+.project-text li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #4D4D4D;
+}
+
+img.img-people {
+/*	position: relative;
+*/	float: right;
+	width: 265px;
+	height: 265px;
+/*	margin-left: 60px;
+*//*	border-radius: 130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius: 140px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
 
 /*This makes the header snippet responsive */
 
 @media screen and (max-width: 65em) {
-	body {
+	.ha-header {
 		font-size: 85%;
 	}
 }
@@ -270,7 +453,7 @@ header {
 
 	.ha-header h1 {
 		padding: 10px 0;
-		height: 60%;
+		height: .6em;
 	}
 
 	.ha-header .ha-header-bottom nav {
