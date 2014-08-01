@@ -1,0 +1,196 @@
+@import url(http://fonts.googleapis.com/css?family=Exo:300,400,700);
+
+body {
+	background: white;
+	font-weight: 400;
+	font-family: 'Exo', Arial, sans-serif;
+	font-size: 40px;
+}
+
+a {
+	/* Global link definition is orange color and without underline */
+	color: #E54918;
+	text-decoration: none;
+}
+
+section.project-text {
+	font-weight: 300;
+	float: left;
+	font-size: 40%;
+	margin-left: 440px;
+	padding-left: 80px;
+	padding-right: 160px;
+}
+
+section p {
+	opacity: 0.9;
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+.opening-image {
+	width: 100%;
+	height: 870px;
+	overflow: hidden;
+	z-index: -1000;
+}
+
+/*Main nav area*/
+
+.main-nav {
+	width: 415px;
+	margin-left: 5px;
+	margin-top: 50px;
+	position: fixed;
+
+}
+
+#logo {
+	/*This is the logo area which contains 'Sudarshan' and the 'is a ______' part. 
+	Separate font family, fixed box and floats inside the header*/
+	font-weight: 700;
+	text-transform: uppercase;
+	width: 375px;
+	height: 70px;
+	background-color: #E54918;
+	border-radius: 0px 0px 5px 5px;
+	border-bottom: transparent solid 2px;
+	padding-left: 40px;
+}
+
+#logo a{
+	color: white;
+}
+
+/*Next set of classes define the properties for the content inside the sidenav */
+.sidenav p {
+	margin-left: 40px;
+	font-size: 55%;
+	padding-top: 5px;
+	color: #E54918;
+	margin-top: 10;
+	margin-bottom: 0;
+}
+
+.sidenav ul {
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: 50%;
+	font-weight: 300;
+	margin-bottom: 0;
+	margin-top: 0;
+
+}
+
+.sidenav li {
+	padding: 7px 0;
+	text-transform: none;
+	font-variant: small-caps;
+
+}
+
+/*This is for the main project text */
+
+.project-text {
+	font-weight: 300;
+	float: left;
+	font-size: 80%;
+/*	margin-left: 440px;
+*//*	padding-left: 80px;
+	padding-right: 160px;*/
+}
+
+.project-text h1 {
+	font-weight: 200;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: -87px;
+	background-color: #FBE8E6;
+	padding: 7px;
+}
+
+.project-text h2 {
+	font-weight: 200;
+	font-size: 120%;
+	border-bottom: 2px dotted #F3501D;
+	margin-left: -80px;
+}
+
+.opening-image .project-opening {
+	font-weight: 800;
+	font-size: 150%;
+	text-transform: uppercase;
+	margin-left: 440px;
+	margin-top: 65px;
+	color: rgba(243,80,29,0.5); 
+	position: absolute;
+}
+
+.project-text li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #4D4D4D;
+}
+
+img.img-people {
+/*	position: relative;
+*/	float: right;
+	width: 265px;
+	height: 265px;
+/*	margin-left: 60px;
+*//*	border-radius: 130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius: 140px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
+
+/*Dropdown CSS overrides over common.css*/
+
+.cd-dropdown,
+.cd-select {
+	width: 335px;
+	border-top: transparent solid 2px;
+}
+
+.cd-dropdown > span {
+	color: #fff;
+	font-weight: 400;
+	font-size: 0.5em;
+	background: #E54918;
+	padding: 0 10px 0 70px;
+
+}
+
+.cd-dropdown > span:after {
+	margin-top: -10px;
+	line-height: 45px;
+	font-size: 18px;
+
+
+}
+
+.cd-dropdown ul {
+	/*nothing changed*/	
+}
+
+.cd-dropdown ul li {
+	/*nothing changed*/	
+}
+
+.cd-dropdown ul li span {
+	background: #E54918;
+	color: #fff;
+	font-size: 55%;
+
+}
+
+/*Dropdown CSS overrides over style4.css*/
+
+
+
+
+

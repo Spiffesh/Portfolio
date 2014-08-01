@@ -1,6 +1,5 @@
-@import url('component.css');
-/*@import url('common.css');*/
-/*@import url('icons.css');*/
+@import url('common.css');
+@import url('icons.css');
 
 .cd-dropdown {
 	-webkit-perspective: 800px;
@@ -8,7 +7,6 @@
 	-o-perspective: 800px;
 	-ms-perspective: 800px;
 	perspective: 800px;
-	top: 121px;
 }
 
 .cd-dropdown > span {
@@ -75,4 +73,10 @@
 .cd-active.cd-dropdown ul li span:hover {
 	background: #f8b161;
 	color: #fff;
+}
+
+/* Select fallback styling */
+.cd-select {
+	border: 1px solid #ddd;
+
 }
