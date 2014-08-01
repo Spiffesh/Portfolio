@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Exo:300,400,500,700);
+*, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
 
 body {
 	background: white;
@@ -13,15 +15,6 @@ a {
 	text-decoration: none;
 }
 
-section.project-text {
-	font-weight: 300;
-	float: left;
-	font-size: 40%;
-	margin-left: 440px;
-	padding-left: 80px;
-	padding-right: 160px;
-}
-
 section p {
 	opacity: 0.9;
 }
@@ -32,7 +25,7 @@ img {
 }
 .opening-image {
 	width: 100%;
-	height: 870px;
+	height: 640px;
 	overflow: hidden;
 	z-index: -1000;
 }
@@ -48,8 +41,7 @@ img {
 }
 
 #logo {
-	/*This is the logo area which contains 'Sudarshan' and the 'is a ______' dropdown. 
-	Separate font family, fixed box and floats inside the header*/
+	/*This is the logo area which contains 'Sudarshan' which is positioned in the main-nav*/
 	font-weight: 700;
 	text-transform: uppercase;
 	width: 375px;
@@ -64,108 +56,6 @@ img {
 
 #logo a{
 	color: white;
-}
-
-/*Next set of classes define the properties for the content inside the sidenav */
-
-.sidenav {
-	line-height: 0.5em;
-	width: 100%;
-	text-align: right;
-	color: rgb(77,77,77)
-}
-
-
-.sidenav p {
-	margin-left: 50px;
-	font-size: 0.5em;
-	/*padding-top: 5px;*/
-	/*margin-top: 10;*/
-	margin-bottom: 0;
-}
-
-.sidenav ul {
-	margin-left: 30px;
-	list-style-type: none;
-	font-size: .45em;
-	font-weight: 300;
-	margin-top: 0;
-	margin-bottom: 0;
-
-}
-
-.sidenav li {
-	padding: 7px 0;
-	text-transform: none;
-	font-variant: small-caps;
-
-}
-
-.sidenav li span{
-	color: #E54918;
-	font-weight: 500;
-
-}
-/*.sidenav .section-active {
-	color: #E54918;
-
-}*/
-
-/*This is for the main project text */
-
-.project-text {
-	font-weight: 300;
-	float: left;
-	font-size: 80%;
-/*	margin-left: 440px;
-*//*	padding-left: 80px;
-	padding-right: 160px;*/
-}
-
-.project-text h1 {
-	font-weight: 200;
-	font-size: 150%;
-	text-transform: uppercase;
-	margin-left: -87px;
-	background-color: #FBE8E6;
-	padding: 7px;
-}
-
-.project-text h2 {
-	font-weight: 200;
-	font-size: 120%;
-	border-bottom: 2px dotted #F3501D;
-	margin-left: -80px;
-}
-
-.opening-image .project-opening {
-	font-weight: 800;
-	font-size: 150%;
-	text-transform: uppercase;
-	margin-left: 440px;
-	margin-top: 65px;
-	color: rgba(243,80,29,0.5); 
-	position: absolute;
-}
-
-.project-text li {
-	list-style-type: none;
-	padding-bottom: 5px;
-	border-bottom: 1px dotted #4D4D4D;
-}
-
-img.img-people {
-/*	position: relative;
-*/	float: right;
-	width: 265px;
-	height: 265px;
-/*	margin-left: 60px;
-*//*	border-radius: 130px;
-	-webkit-border-radius: 130px;
-	-moz-border-radius: 140px;
-	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
-	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
 }
 
 /*Dropdown CSS overrides over common.css and style4.css*/
@@ -212,6 +102,107 @@ img.img-people {
 
 
 }
+
+/*Next set of classes define the properties for the content inside the sidenav */
+
+.sidenav {
+	line-height: 0.5em;
+	width: 100%;
+	text-align: right;
+	color: rgb(77,77,77);
+	background-color: rgba(244,244,244,.5);
+	padding: 5px 0;
+}
+
+
+.sidenav p {
+	margin-left: 50px;
+	font-size: 0.5em;
+	/*padding-top: 5px;*/
+	/*margin-top: 10;*/
+	margin-bottom: 0;
+}
+
+.sidenav ul {
+	margin-left: 30px;
+	list-style-type: none;
+	font-size: .45em;
+	font-weight: 300;
+	margin-top: 0;
+	margin-bottom: 0;
+
+}
+
+.sidenav li {
+	padding: 7px 15px;
+	text-transform: none;
+	font-variant: small-caps;
+
+}
+
+.sidenav li span{
+	color: #E54918;
+	font-weight: 500;
+
+}
+/*.sidenav .section-active {
+	color: #E54918;
+
+}*/
+
+/*main-nav ends here*/
+
+
+
+/*This is for the main project text */
+
+.project-text {
+	font-weight: 300;
+	float: left;
+	font-size: 0.4em;
+	margin-left: 440px;
+	padding-left: 80px;
+	padding-right: 160px;
+}
+
+.project-text h1 {
+	font-weight: 200;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	margin-left: -87px;
+	background-color: #FBE8E6;
+	padding: 7px;
+}
+
+.project-text h2 {
+	font-weight: 200;
+	font-size: 1.2em;
+	border-bottom: 2px dotted #F3501D;
+	margin-left: -80px;
+}
+
+
+.project-text li {
+	list-style-type: none;
+	padding-bottom: 5px;
+	border-bottom: 1px dotted #4D4D4D;
+}
+
+img.img-people {
+	position: relative;
+	float: right;
+	width: 265px;
+	height: 265px;
+	/*margin-left: 60px;*/
+/*	border-radius: 130px;
+	-webkit-border-radius: 130px;
+	-moz-border-radius: 140px;
+	box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-webkit-box-shadow: 0 0 8px rgba(0, 0, 0, .8);
+	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
+}
+
+
 
 
 
