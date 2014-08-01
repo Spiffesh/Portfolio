@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:300,400,700);
+@import url(http://fonts.googleapis.com/css?family=Exo:300,400,500,700);
 
 body {
 	background: white;
@@ -48,16 +48,18 @@ img {
 }
 
 #logo {
-	/*This is the logo area which contains 'Sudarshan' and the 'is a ______' part. 
+	/*This is the logo area which contains 'Sudarshan' and the 'is a ______' dropdown. 
 	Separate font family, fixed box and floats inside the header*/
 	font-weight: 700;
 	text-transform: uppercase;
 	width: 375px;
-	height: 70px;
+	height: 50px;
 	background-color: #E54918;
 	border-radius: 0px 0px 5px 5px;
 	border-bottom: transparent solid 2px;
-	padding-left: 40px;
+	padding: 5px 5px 5px 40px;
+	font-size: 0.8em;
+	line-height: 1.6em;
 }
 
 #logo a{
@@ -65,22 +67,30 @@ img {
 }
 
 /*Next set of classes define the properties for the content inside the sidenav */
+
+.sidenav {
+	line-height: 0.5em;
+	width: 100%;
+	text-align: right;
+	color: rgb(77,77,77)
+}
+
+
 .sidenav p {
-	margin-left: 40px;
-	font-size: 55%;
-	padding-top: 5px;
-	color: #E54918;
-	margin-top: 10;
+	margin-left: 50px;
+	font-size: 0.5em;
+	/*padding-top: 5px;*/
+	/*margin-top: 10;*/
 	margin-bottom: 0;
 }
 
 .sidenav ul {
 	margin-left: 30px;
 	list-style-type: none;
-	font-size: 50%;
+	font-size: .45em;
 	font-weight: 300;
-	margin-bottom: 0;
 	margin-top: 0;
+	margin-bottom: 0;
 
 }
 
@@ -90,6 +100,16 @@ img {
 	font-variant: small-caps;
 
 }
+
+.sidenav li span{
+	color: #E54918;
+	font-weight: 500;
+
+}
+/*.sidenav .section-active {
+	color: #E54918;
+
+}*/
 
 /*This is for the main project text */
 
@@ -148,12 +168,12 @@ img.img-people {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
 }
 
-/*Dropdown CSS overrides over common.css*/
+/*Dropdown CSS overrides over common.css and style4.css*/
 
 .cd-dropdown,
 .cd-select {
 	width: 335px;
-	border-top: transparent solid 2px;
+	border-top: transparent solid 5px;
 }
 
 .cd-dropdown > span {
@@ -162,6 +182,8 @@ img.img-people {
 	font-size: 0.5em;
 	background: #E54918;
 	padding: 0 10px 0 70px;
+	border-radius: 0 0 5px 5px;
+	height: 50px;
 
 }
 
@@ -184,11 +206,13 @@ img.img-people {
 .cd-dropdown ul li span {
 	background: #E54918;
 	color: #fff;
-	font-size: 55%;
+	font-size: 0.5em;
+	border-radius: 0 0 5px 5px;
+	height: 50px;
+
 
 }
 
-/*Dropdown CSS overrides over style4.css*/
 
 
 
