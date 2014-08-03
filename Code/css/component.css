@@ -4,10 +4,7 @@
 /*This is the project title transitioning from long text to short text*/
 
 .ha-header {
-	position: fixed;
-	top: 180px;
-	left: 0;
-	width: 100%;
+	/*position: fixed;*/
 	padding-left: 0px;
 	/*font-family: 'Lato', Arial, sans-serif;*/
 	-webkit-transform: translateY(0%);
@@ -24,14 +21,14 @@
 /* Text styling */
 
 .ha-header h1 {
-	display: inline-block;
+	/*display: inline-block;*/
 	vertical-align: middle;
 	text-align: center;
 	text-align: left;
 	font-weight: 400;
-	font-size: 70%;
-	margin-left: 5px;
-	width: 100%;
+	font-size: 0.7em;
+/*	margin-left: 5px;
+*/	width: 100%;
 	color: #E54918;
 	cursor: default;
 	height: 100%;
@@ -43,10 +40,9 @@
 
 .ha-header h1::after {
 	content: '';
-	width: 420px;
-	height: auto;
+	/*height: auto;*/
 	background: transparent;
-	position: absolute;
+	/*position: absolute;*/
 	top: 20px;
 	left: 0;
 	cursor: pointer;
@@ -66,31 +62,21 @@
 	padding-left: 50px;
 	padding-top: 10px;
 	padding-bottom: 10px;
-/*	z-index: 10;*/
 }
 
 .ha-header-box {
-	top: 180px;
 	left: 5px;
-	width: 420px;
 	background-color: rgba(255,255,255,0);
-	/*z-index: 11;*/
 }
 
 
 
 .ha-header-box h1{
 	color: transparent;
-
 }
 
 .ha-header-box h1:after {
 	opacity: 1;
-	color: #E54918;
-	padding-left: 30px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	padding-right: 30px;
 }
 
 

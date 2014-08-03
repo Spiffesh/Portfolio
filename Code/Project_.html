@@ -10,9 +10,14 @@
 		<meta name="author" content="Sudarshan Gopalan" />
 		<link rel="shortcut icon" href="../favicon.ico"> 
 		<link rel="stylesheet" type="text/css" href="css/style4.css" />
-		<link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
 		<link rel="stylesheet" type="text/css" href="css/sudfolio.css" />
-		<script src="js/modernizr.custom.63321.js"></script>
+		<style>
+			.ha-header-box h1:after {
+			content: "Mobile Banking App";
+			}
+		</style>
+
 	</head>
 	<body>
 		<div class="main-nav">		
@@ -25,6 +30,13 @@
 				<option value="2">Social Entrepreneur</option>
 				<option value="3">Human</option>
 			</select>
+			<div id="ha-header" class="ha-header ha-header-small">
+				<div class="ha-header-perspective">
+					<div class="ha-header-front">
+						<h1><span>Mobile banking app to simplify money transfer and withdrawal</span></h1>
+					</div>
+				</div>
+			</div>
 			<div class="sidenav">
 				<div class="project-details-group">
 					<p id="project-details">Project details</p>
@@ -53,53 +65,83 @@
 			<div class="opening-image">
 				<img src="../Content/Patelco/Opening.png">
 			</div>
-			<div class="project-text">
-				<h1 id="design-brief-text">Design brief</h1>
-				<h2 id="problem-text">Problem</h2>
-				<p>Patelco credit union wanted to move into mobile-first digital presence. Our task was to start this process by creating a mobile app focussed on their checking account services.</p>
-				<h2 id="context-text">Context</h2>
-				<p>
-					<ul>
-						<li>Hypothetical project at General Assembly</li>
-						<li>Problem picked our team to explore applications in community of banking</li>
-						<li>Duration of 2 weeks</li>
-						<li>Aim was to create a checking account experience for the unique case of credit union customers</li>
-					</ul>
-				</p>
-				<h2 id="team-text">Team</h2>
-				<p>I worked with <a href="#">William Klemt</a> and <a href="#">Joaille Aruajo</a>, my classmates at General Assembly. My key contributions were in Research, Ideation, Prototyping and Delivery</p>
-				<h1 id="methods-text">Methods</h1>
-				<h2 id="discovery-text">Discovery</h2>
-				<p>
-						<strong>Competitive analysis</strong> <br> We did a thorough competitive analysis. consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, turpis mattis 
-					<!-- <br><br><br><br><br><br><br><br><br><br>
-					<div class="img-people">
-						<img src="../Content/Patelco/comp-analysis.png">
-					</div>
-					<br><br> -->
-				</p>
-				<p>
-					<strong>User research</strong> <br> We did a thorough user research. consectetur adipiscing elit. Inigula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis
-					<img class="img-people" src="../Content/Patelco/user-research.png">
-					
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
-				</p>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
-				</p>
-
+			<div>
+				<p>Gutter text</p>
 			</div>
+			<section class="ha-waypoint" data-animate-down="ha-header-box" data-animate-up="ha-header-small">
+				<div class="project-text">
+					<h1 id="design-brief-text">Design brief</h1>
+					<h2 id="problem-text">Problem</h2>
+					<p>Patelco credit union wanted to move into mobile-first digital presence. Our task was to start this process by creating a mobile app focussed on their checking account services.</p>
+					<h2 id="context-text">Context</h2>
+					<p>
+						<ul>
+							<li>Hypothetical project at General Assembly</li>
+							<li>Problem picked our team to explore applications in community of banking</li>
+							<li>Duration of 2 weeks</li>
+							<li>Aim was to create a checking account experience for the unique case of credit union customers</li>
+						</ul>
+					</p>
+					<h2 id="team-text">Team</h2>
+					<p>I worked with <a href="#">William Klemt</a> and <a href="#">Joaille Aruajo</a>, my classmates at General Assembly. My key contributions were in Research, Ideation, Prototyping and Delivery</p>
+					<h1 id="methods-text">Methods</h1>
+					<h2 id="discovery-text">Discovery</h2>
+					<p>
+							<strong>Competitive analysis</strong> <br> We did a thorough competitive analysis. consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, turpis mattis 
+						<!-- <br><br><br><br><br><br><br><br><br><br>
+						<div class="img-people">
+							<img src="../Content/Patelco/comp-analysis.png">
+						</div>
+						<br><br> -->
+					</p>
+					<p>
+						<strong>User research</strong> <br> We did a thorough user research. consectetur adipiscing elit. Inigula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis
+						<img class="img-people" src="../Content/Patelco/user-research.png">
+						
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
+					</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In non lacinia sapien, eget molestie neque. Vestibulum vitae luctus mauris. Sed eros dolor, iaculis vitae eleifend in, lacinia ac arcu. Donec egestas ligula nisi, vitae dapibus neque pretium et. Donec elementum sed nulla interdum adipiscing. Proin sagittis sagittis magna a suscipit. Etiam vestibulum, nibh eget vestibulum malesuada, magna urna dignissim metus, eget condimentum urna ligula vehicula lectus. Etiam sapien enim, consectetur sit amet lacinia at, aliquet vitae dui. Aliquam at ligula nec turpis mattis mollis id vitae velit.
+					</p>
 
+				</div>
+
+			</section>
 
 
 		</div>
 
 
-
+<!-- All javascript files are called here -->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/modernizr.custom.63321.js"></script>
+		<!-- // <script src="js/modernizr.custom.js"></script> --> <!-- This is left commented out as it is conflicting with the other modernizer js script -->
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
 		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+
+<!-- This is the javascript for the shrinking project title text feature -->
+
+		<script>
+			var $head = $( '#ha-header' );
+			$( '.ha-waypoint' ).each( function(i) {
+				var $el = $( this ),
+					animClassDown = $el.data( 'animateDown' ),
+					animClassUp = $el.data( 'animateUp' );
+
+				$el.waypoint( function( direction ) {
+					if( direction === 'down' && animClassDown ) {
+						$head.attr('class', 'ha-header ' + animClassDown);
+					}
+					else if( direction === 'up' && animClassUp ){
+						$head.attr('class', 'ha-header ' + animClassUp);
+					}
+				}, { offset: '100%' } );
+			} );
+		</script>
+<!-- This is the javascript for the dropdown feature -->
+
 		<script type="text/javascript">
 			
 			$( function() {

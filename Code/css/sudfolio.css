@@ -7,6 +7,7 @@ body {
 	font-weight: 400;
 	font-family: 'Exo', Arial, sans-serif;
 	font-size: 40px;
+	margin: 0;
 }
 
 a {
@@ -37,6 +38,7 @@ img {
 	margin-left: 5px;
 	margin-top: 50px;
 	position: fixed;
+	overflow: visible;
 
 }
 
@@ -44,7 +46,7 @@ img {
 	/*This is the logo area which contains 'Sudarshan' which is positioned in the main-nav*/
 	font-weight: 700;
 	text-transform: uppercase;
-	width: 375px;
+	/*width: 375px;*/
 	height: 50px;
 	background-color: #E54918;
 	border-radius: 0px 0px 5px 5px;
@@ -60,9 +62,14 @@ img {
 
 /*Dropdown CSS overrides over common.css and style4.css*/
 
+
+.cd-dropdown.cd-active {
+	z-index: 9000;
+}
+
 .cd-dropdown,
 .cd-select {
-	width: 335px;
+	width: 100%;
 	border-top: transparent solid 5px;
 }
 
@@ -78,8 +85,8 @@ img {
 }
 
 .cd-dropdown > span:after {
-	margin-top: -10px;
-	line-height: 45px;
+	/*margin-top: -10px;*/
+	/*line-height: 45px;*/
 	font-size: 18px;
 
 
@@ -94,6 +101,7 @@ img {
 }
 
 .cd-dropdown ul li span {
+	width: 100%;
 	background: #E54918;
 	color: #fff;
 	font-size: 0.5em;
@@ -102,6 +110,32 @@ img {
 
 
 }
+
+.ha-header{
+	width: 300%;
+	z-index: -10;
+
+}
+
+.ha-header-box {
+	width: 100%;
+}
+
+
+
+.ha-header-box h1{
+	font-size: .7em;
+}
+
+.ha-header-box h1:after {
+	color: #E54918;
+	padding: 10px 30px 10px 30px;
+}
+
+.ha-header-box h1 span{
+	font-size: 0;
+}
+
 
 /*Next set of classes define the properties for the content inside the sidenav */
 
