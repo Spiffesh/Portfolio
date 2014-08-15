@@ -1,11 +1,11 @@
-@import url(http://fonts.googleapis.com/css?family=Exo:300,400,500,700);
+@import url(http://fonts.googleapis.com/css?family=Roboto:300,400,500,700);
 *, *:after, *:before { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
 
 
 body {
 	background: white;
 	font-weight: 400;
-	font-family: 'Exo', Arial, sans-serif;
+	font-family: 'Roboto', Arial, sans-serif;
 	font-size: 40px;
 	margin: 0;
 }
@@ -26,7 +26,7 @@ img {
 }
 .opening-image {
 	width: 100%;
-	height: 640px;
+	height: 650px;
 	overflow: hidden;
 	z-index: -1000;
 }
@@ -34,7 +34,7 @@ img {
 /*Main nav area*/
 
 .main-nav {
-	width: 415px;
+	width: 315px;
 	margin-left: 5px;
 	margin-top: 50px;
 	position: fixed;
@@ -46,12 +46,12 @@ img {
 	/*This is the logo area which contains 'Sudarshan' which is positioned in the main-nav*/
 	font-weight: 700;
 	text-transform: uppercase;
-	/*width: 375px;*/
+	width: 100%;
 	height: 50px;
 	background-color: #E54918;
 	border-radius: 0px 0px 5px 5px;
 	border-bottom: transparent solid 2px;
-	padding: 5px 5px 5px 40px;
+	padding: 5px 5px 5px 10px;
 	font-size: 0.8em;
 	line-height: 1.6em;
 }
@@ -78,9 +78,11 @@ img {
 	font-weight: 400;
 	font-size: 0.5em;
 	background: #E54918;
-	padding: 0 10px 0 70px;
+	padding: 0 10px 0 20px;
 	border-radius: 0 0 5px 5px;
 	height: 50px;
+	line-height: 50px;
+
 
 }
 
@@ -107,14 +109,20 @@ img {
 	font-size: 0.5em;
 	border-radius: 0 0 5px 5px;
 	height: 50px;
-
+	padding: 0 10px 0 20px;
+	line-height: 50px;
 
 }
 
 .ha-header{
-	width: 300%;
+	width: 400%;
 	z-index: -10;
 
+}
+
+.ha-header h1{
+	font-weight: 400;
+	font-size: 0.6em;
 }
 
 .ha-header-box {
@@ -124,7 +132,7 @@ img {
 
 
 .ha-header-box h1{
-	font-size: .7em;
+	font-size: .5em;
 }
 
 .ha-header-box h1:after {
@@ -187,14 +195,95 @@ img {
 /*main-nav ends here*/
 
 
+/*This is the css for the project list pages for each of the selection in the main nav*/
+
+.project-element {
+	color: black;
+	border-radius: 2px;
+	overflow: hidden;
+	height: auto;
+	margin: 30px 20px 0 20px;
+	/*border-bottom: #E54918 dotted 2px;*/
+	box-shadow: 0 0 0.5em #E5E5E5;
+	border: #D9D9D9 solid 1px;
+	width: 300px;
+	height: auto;
+	float: left;
+	position: relative;
+	padding: 1px;
+	-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+	-moz-transition: all 0.5s ease; /* Firefox */
+	-ms-transition: all 0.5s ease; /* IE 9 */
+	-o-transition: all 0.5s ease; /* Opera */
+	transition: all 0.5s ease;
+	opacity: 0.85;
+}
+
+.project-element:hover {
+	opacity: 1;
+	-webkit-transform:translateY(-5px); /* Safari and Chrome */
+	-moz-transform:translateY(-5px); /* Firefox */
+	-ms-transform:translateY(-5px); /* IE 9 */
+	-o-transform:translateY(-5px); /* Opera */
+	 transform:translateY(-5px);
+
+}
+.project-element img {
+	width: 100%;
+	position: relative;
+	display: inline-block;
+	border-radius: 2px 2px 0 0;
+	/*margin: 1px;*/
+	border-bottom: #D9D9D9 solid 1px;
+
+}
+
+.project-element-text {
+	position: relative;
+	display: inline-block;
+	width: 98%;
+	vertical-align: top;
+}
+
+.project-element h3 {
+	display: block;
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	text-align: center;
+	/*font-size: 0.8em;*/
+	margin: 0;
+
+}
+
+
+.project-element p {
+	position: relative;
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	/*font-size: 0.5em;*/
+	padding: 5%;
+	margin: 0;
+}
+
 
 /*This is for the main project text */
+
+.project-section {
+
+	box-shadow: 0 0 0.5em #E5E5E5;
+	border: #D9D9D9 solid 1px;
+	
+}
 
 .project-text {
 	font-weight: 300;
 	float: left;
 	font-size: 0.4em;
-	margin-left: 440px;
+	margin-left: 340px;
+	margin-top: 20px;
 	padding-left: 80px;
 	padding-right: 160px;
 }
@@ -213,6 +302,7 @@ img {
 	font-size: 1.2em;
 	border-bottom: 2px dotted #F3501D;
 	margin-left: -80px;
+
 }
 
 
@@ -224,9 +314,9 @@ img {
 
 img.img-people {
 	position: relative;
-	float: right;
 	width: 265px;
 	height: 265px;
+	float: right;
 	/*margin-left: 60px;*/
 /*	border-radius: 130px;
 	-webkit-border-radius: 130px;
@@ -236,6 +326,28 @@ img.img-people {
 	-moz-box-shadow: 0 0 8px rgba(0, 0, 0, .8);*/
 }
 
+.img-slides {
+	position: relative;
+	overflow: hidden;
+	margin: 5px;
+	width: 100%;
+
+}
+
+.img-spread {
+	position: relative;
+	width: 100%;
+	margin: 5px;
+}
+
+.img-slides img {
+	position: relative;
+	float: left;
+	border-radius: 2px;
+	margin: 5px;
+	width: 48%;
+
+}
 
 
 
