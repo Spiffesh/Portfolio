@@ -10,9 +10,9 @@
 	-webkit-transform: translateY(0%);
 	-moz-transform: translateY(0%);
 	transform: translateY(0%);
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	/*z-index: 2;*/
 
 }
@@ -32,9 +32,9 @@
 	color: #E54918;
 	cursor: default;
 	height: 100%;
-	-webkit-transition: all 0.1s;
-	-moz-transition: all 0.5s;
-	transition: all 0.5s;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
 	text-transform: uppercase;
 }
 
@@ -49,9 +49,9 @@
 	opacity: 0;
 	text-transform: uppercase;
 /*	border: 20px solid #fff;*/	
-	-webkit-transition: opacity 0.1s;
-	-moz-transition: opacity 0.1s;
-	transition: opacity 0.1s;
+	-webkit-transition: opacity 0.5s;
+	-moz-transition: opacity 0.5s;
+	transition: opacity 0.5s;
 }
 
 
@@ -65,7 +65,6 @@
 }
 
 .ha-header-box {
-	left: 5px;
 	background-color: rgba(255,255,255,0);
 }
 
