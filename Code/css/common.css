@@ -24,13 +24,12 @@
 	position: absolute;
 	right: 0px;
 	top: 15%;
-	width: 50px;
+	width: 30px;
 	text-align: center;
-	font-size: 18px;
-	padding: 10px;
+	font-size: 12px;
 	height: 70%;
 	line-height: 10px;
-	border-left: 1px solid #ddd;
+	/*border-left: 1px solid #ddd;*/
 }
 
 .cd-dropdown.cd-active > span:after {
