@@ -15,6 +15,7 @@
 	$.DropDown = function( options, element ) {
 		this.$el = $( element );
 		this._init( options );
+		// window.location.href = this.children[this.selectedIndex].getAttribute('href');
 	};
 
 	// the options
@@ -66,6 +67,7 @@
 				setTimeout( function() { self.opts.css( 'transition', 'all ' + self.options.speed + 'ms ' + self.options.easing ); }, 25 );
 			}
 
+
 		},
 		_transformSelect : function() {
 
@@ -78,11 +80,22 @@
 					selected = $this.attr( 'selected' ),
 					label = $this.text();
 
+				if (val === 1) {
+					var url = 'http://www.bing.com'
+				} else if (val === 2) {
+					var url = 'http://www.google.com'
+
+				} else if (val === 3) {
+					var url = 'http://www.facebook.com'
+
+				};
+
 				if( val !== -1 ) {
 					optshtml += 
 						classes !== undefined ? 
 							'<li data-value="' + val + '"><span class="' + classes + '">' + label + '</span></li>' :
-							'<li data-value="' + val + '"><span>' + label + '</span></li>';
+							'<a href="' + url + '">' + '<li data-value="' + val + '"><span>' +  label  + '</span>' + '</a></li>';
+
 				}
 
 				if( selected ) {
@@ -91,7 +104,6 @@
 				}
 
 			} );
-
 			this.listopts = $( '<ul/>' ).append( optshtml );
 			this.selectlabel = $( '<span/>' ).append( selectlabel );
 			this.dd = $( '<div class="cd-dropdown"/>' ).append( this.selectlabel, this.listopts ).insertAfter( this.$el );
@@ -208,5 +220,7 @@
 		}
 		return instance;
 	};
+
+
 
 } )( jQuery, window );
