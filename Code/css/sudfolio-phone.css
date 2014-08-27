@@ -3,7 +3,7 @@
 
 
 body {
-	background: white;
+	background: orange;
 	font-weight: 400;
 	font-family: 'Josefin Slab', Arial, sans-serif;
 	font-size: 40px;
@@ -156,6 +156,7 @@ img {
 /*Main nav area*/
 
 .main-nav {
+	display: none;
 	width: 315px;
 	margin-left: 5px;
 	margin-top: 50px;
@@ -164,15 +165,39 @@ img {
 
 }
 
-/*.phone-main-nav {
-	display: none;
+.phone-main-nav {
+	display: block;
+	width: 100%;
+	margin: 0;
+	position: absolute;
+	overflow: hidden;
+	text-align: center;
+	font-size: 0.6em;
 }
-*/
+
+.phone-main-nav span {
+	list-style-type: none;
+	height: 30px;
+	background-color: #E54918;
+	border: #f8b161 solid 1px;
+	padding: 5px 5px 5px 10px;
+	font-size: 0.5em;
+	display: block;
+	width: 100%;
+	line-height: 2em;
+
+}
+
+.phone-main-nav a {
+	color: white;
+	font-family: 'Special Elite', cursive;
+}
+
 #logo {
 	/*This is the logo area which contains 'Sudarshan' which is positioned in the main-nav*/
 	text-transform: uppercase;
 	width: 100%;
-	height: 50px;
+	height: 30px;
 	background-color: #E54918;
 	border-radius: 0px 0px 5px 5px;
 	border-bottom: transparent solid 2px;
@@ -814,14 +839,16 @@ section.overview {
 .brand-state {
 	background-color: rgba(252,252,252,0.7);
 	float: left;
-	position: fixed;
-	margin: 165px 0px 0 340px;
-	padding: 0 290px 0 80px;
+	position: relative;
+	margin: 120px 0px 0 0;
+	padding: 5px;
 	font-weight: 700;
 	z-index: 1;
-	font-size: 1.1em;
+	font-size: .7em;
 	display: block;
 }
+
+
 
 
 .about-me .opening-line{
@@ -919,10 +946,6 @@ section.overview {
 	padding-left: 20%;
 }
 
-/*.mobile {
-	display: none;
-}
-*/
 
 
 
