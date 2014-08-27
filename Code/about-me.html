@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>Project list type</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="portfolio, UX, design" />
+		<meta name="author" content="Sudarshan Gopalan" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/sudfolio.css" />
+
+	</head>
+	<body>
+		<div class="main-nav">		
+			<div id="logo">
+				<a href="./index.html">Sudarshan</a>
+			</div>
+			<select id="cd-dropdown" class="cd-select" onchange="javascript:handleSelect(this)">
+				<option value="-1" selected>Human</option>
+				<option value="1">User Experience designer</option>
+				<option value="2">Social Entrepreneur</option>
+				<option value="3">Human</option>
+			</select>
+
+			<div class="sidenav">
+				<br>
+				<div class="resume-group">
+					<a href="files/sudarshan_resume_sept2014.pdf" target='_blank'><p>Download my resume</p><img src="images/icons/resume.png"></a>
+				</div>
+				
+
+			</div>
+		</div>
+		<div class="project-text about-me">
+			<div class='about-me-text'>		
+				<div class='project-section'>
+					<div class="project-step">
+						<p class="opening-line">
+							Every day I strive to do the right thing or, at the very least, do less wrong.														
+						</p>
+						<p class='text-heavy'>Through my work, I’d like to tackle impactful problems, keep people at the center of every solution and improve quality of living for the present and future generations.</p>
+						<img src="images/About/SudG.png">
+
+					</div>
+					<div class='project-step'>
+						<h2>Why should you hire me?</h2>
+						<p class='quote'>" a little bit of slope makes up <br>for a lot of y-intercept"</p>
+						<p class="image-heavy"><br><br>This quote is from <a href='http://www.quora.com/What-are-the-most-profound-life-lessons-from-Stanford-Professor-John-Ousterhout' target='_blank'>a lecture by Prof. Ousterhout</a> of Stanford. The argument he makes, is simple: for any decision in life, especially hiring, it is better to bet on a person who has the attitude to learn and grow over any other qualification. I believe I have that attitude.</p>
+						<img src="images/About/learning-growth-clean.png" class='infograph'>
+
+						<p><br>I am a scrappy, collaborative problem-solver with operational and product management experience able to dive in at multiple levels. Having been an entrepreneur, I have encountered many problems that need me to hustle, read up, talk to as many people as I can, ask dumb questions, ask smart questions, raise my hands to say, “I don’t understand this and I need help”. For every daunting problem I have faced, patience and an open mind proved to be the fuel to get me over the hill, and on the right path.</p>
+						<br><br>
+						<p>I'd like to be useful to your team. <a href='maito:hello@sudarshang.co'>Reach out to me</a> and let me know how I can help!</p>
+					</div>
+					<!-- <div class='project-step'>
+						<h2>Whom have I worked with?</h2>
+						<p class="image-heavy"><br><br>This quote is from <a href='http://www.quora.com/What-are-the-most-profound-life-lessons-from-Stanford-Professor-John-Ousterhout' target='_blank'>a lecture by Prof. Ousterhout</a> of Stanford. The argument he makes, is simple: for any decision in life, especially hiring, it is better to bet on a person who has the attitude to learn and grow over any other qualification. I believe I have that attitude.</p>
+						<img src="images/About/learning-growth-clean.png" class='infograph'>
+						<p>I am a scrappy, collaborative problem-solver with operational and product management experience able to dive in at multiple levels. Having been an entrepreneur, I have encountered many problems that need me to hustle, read up, talk to as many people as I can, ask dumb questions, ask smart questions, raise my hands to say, “I don’t understand this and I need help”. For every daunting problem I have faced, patience and an open mind proved to be the fuel to get me over the hill, and on the right path.</p>
+					</div>
+ -->				</div>
+			</div>
+
+			
+		</div>
+		<div class='footer'> 
+			<div class='project-step thank-you'>
+				<p>Hello! Thanks for stopping by. I would love to hear from you!</p>
+			</div>
+
+			<ul>
+				<li><a href='http://www.twitter.com/sudarshanag' target='_blank'><img src="images/icons/tw.png"></a></li>
+				<li><a href='mailto:hello@sudarshang.co' target='_blank'><img src="images/icons/email.png"></a></li>
+				<li><a href='http://www.linkedin.com/in/agsudarshan' target='_blank'><img src="images/icons/lin.png"></a></li>
+			</ul>
+			<div class='project-step copyright'>
+				<p>Website design & content &#169; copyright 2014 Sudarshan Gopalan. <br>This website has been created by Sudarshan Gopalan with advice from Faz and code snippets from <a href="http://tympanus.net/codrops/">CoDrops.</a></p>
+			</div>
+
+
+		</div>
+
+
+		<!-- All javascript files are called here -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/modernizr.custom.63321.js"></script>
+		<!-- // <script src="js/modernizr.custom.js"></script> --> <!-- This is left commented out as it is conflicting with the other modernizer js script -->
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+		<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown();
+
+			});
+
+		</script>
+
+
+	</body>

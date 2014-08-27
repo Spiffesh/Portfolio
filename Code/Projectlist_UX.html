@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+		<title>UX - Project list</title>
+		<meta name="description" content="" />
+		<meta name="keywords" content="portfolio, UX, design" />
+		<meta name="author" content="Sudarshan Gopalan" />
+		<link rel="shortcut icon" href="../favicon.ico"> 
+		<link rel="stylesheet" type="text/css" href="css/style4.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<link rel="stylesheet" type="text/css" href="css/sudfolio.css" />
+
+	</head>
+	<body>
+		<div class="main-nav">		
+			<div id="logo">
+				<a href="./index.html">Sudarshan</a>
+			</div>
+			<select id="cd-dropdown" class="cd-select" onchange="javascript:handleSelect(this)">
+				<option value="-1" selected>User Experience designer</option>
+				<option value="1">User Experience designer</option>
+				<option value="2">Social Entrepreneur</option>
+				<option value="3">Human</option>
+			</select>
+
+			
+		</div>
+		<div class="project-text project-lists">
+			<a href='./Project_CFE.html'>
+				<div class="project-element">
+					<div class='banner'><span>In-Depth</span></div>
+					<img src="images/CFE/opening.png">
+					<div class="project-element-text">
+						<h3>Consumer awareness mobile app and website</h3>
+						<p>Worked with Conflict-Free Electronics, a social enterprise, to increase awareness of conflict electronics</p>
+					</div>
+				</div>
+			</a>
+			<a href='./Project_Patelco.html'>
+				<div class="project-element">
+					<div class='banner'><span>In-Depth</span></div>
+					<img src="images/Patelco/Opening.png">
+					<div class="project-element-text">
+						<h3>Mobile Banking app</h3>
+						<p>Designed a mobile-first experience for customers of a credit union for a General Assembly project</p>
+					</div>
+				</div>
+			</a>
+			<a href='./Project_MTS.html'>			
+				<div class="project-element">
+					<div class='banner'><span>In-Depth</span></div>
+					<img src="images/MTS/opening.png">
+					<div class="project-element-text">
+						<h3>e-Commerce website</h3>
+						<p>Created an e-Commerce website prototype for Magic Toy Shop</p>
+					</div>
+				</div>
+			</a>
+			<a href='#'>
+			<div class="project-element">
+				<img src="images/Woof/Opening.png">
+				<div class="project-element-text">
+					<h3>Mobile app paper prototype</h3>
+					<p>Created a mobile app concept for the dog-sitting community. Uber meets Tinder - For dogs.</p>
+				</div>
+			</div>
+			</a>
+
+		</div>
+		<div class='footer'> 
+			<div class='project-step thank-you'>
+				<p>Hello! Thanks for stopping by. I would love to hear from you!</p>
+			</div>
+
+			<ul>
+				<li><a href='http://www.twitter.com/sudarshanag' target='_blank'><img src="images/icons/tw.png"></a></li>
+				<li><a href='mailto:hello@sudarshang.co' target='_blank'><img src="images/icons/email.png"></a></li>
+				<li><a href='http://www.linkedin.com/in/agsudarshan' target='_blank'><img src="images/icons/lin.png"></a></li>
+			</ul>
+			<div class='project-step copyright'>
+				<p>Website design & content &#169; copyright 2014 Sudarshan Gopalan. <br>This website has been created by Sudarshan Gopalan with advice from Faz and code snippets from <a href="http://tympanus.net/codrops/">CoDrops.</a></p>
+			</div>
+
+
+		</div>
+
+
+		<!-- All javascript files are called here -->
+		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/modernizr.custom.63321.js"></script>
+		<!-- // <script src="js/modernizr.custom.js"></script> --> <!-- This is left commented out as it is conflicting with the other modernizer js script -->
+		<script type="text/javascript" src="js/waypoints.min.js"></script>
+		<script type="text/javascript" src="js/jquery.dropdown.js"></script>
+		<script type="text/javascript">
+			
+			$( function() {
+				
+				$( '#cd-dropdown' ).dropdown();
+
+			});
+
+		</script>
+
+
+	</body>

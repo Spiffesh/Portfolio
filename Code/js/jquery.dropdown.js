@@ -81,12 +81,12 @@
 					label = $this.text();
 
 				if (val === 1) {
-					var url = 'http://www.bing.com'
+					var url = './Projectlist_UX.html'
 				} else if (val === 2) {
-					var url = 'http://www.google.com'
+					var url = './Projectlist_SocEnt.html'
 
 				} else if (val === 3) {
-					var url = 'http://www.facebook.com'
+					var url = './about-me.html'
 
 				};
 
